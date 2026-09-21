@@ -1,0 +1,5 @@
+.env
+__pycache__/
+*.pyc
+jobs.json
+jobs.txt
