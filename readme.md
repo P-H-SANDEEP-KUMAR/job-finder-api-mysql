@@ -28,20 +28,35 @@ A Python-based job search application that fetches job listings from the Arbeitn
 - mysql-connector-python
 - python-dotenv
 - SQL
+- Git & GitHub
 
 ## How It Works
 
-"""text
-Arbeitnow API
-      ↓
-Fetch job listings
-      ↓
-Clean job data
-      ↓
-Remove duplicates
-      ↓
-Store jobs in MySQL
-      ↓
-SQL-based search
-      ↓
-Display matching jobs
+```text
+                Arbeitnow Job Board API
+                         │
+                         ▼
+                 Python Requests
+                         │
+                         ▼
+              Fetch Multiple Pages
+                         │
+                         ▼
+                Clean Job Data
+              (BeautifulSoup)
+                         │
+                         ▼
+              Remove Duplicates
+                         │
+                         ▼
+                 MySQL Database
+                         │
+                         ▼
+                SQL Search Query
+              (Title + Location)
+                         │
+                         ▼
+                 Matching Jobs
+                         │
+                         ▼
+                    Display
